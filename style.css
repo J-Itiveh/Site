@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #cdcdcd;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+}
+
+#menu {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #a5f4ff;
+}
+.mymenu {
+  justify-content: space-between;
+  align-content: center;
+  padding: 40px 20px;
+  margin: 10px;
+  letter-spacing: 2px;
+  flex: 1;
+  text-align: right;
+}
+
+/* strip the ul of padding and list styling */
+ul {
+  display: block;
+  list-style-type: none;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0;
+  position: relative;
+}
+
+/* Create a horizontal list with spacing */
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+}
+
+/* Style for menu links */
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(120, 175, 69);
+  text-decoration: none;
+}
+/* Hover state for top level links */
+li:hover a {
+  background: #191cc5;
+}
+
+/* Style 'show menu' label button and hide it by default */
+.show-menu {
+  text-decoration: none;
+  color: rgb(90, 89, 0);
+  background: #19c589;
+  text-align: center;
+  padding: 14px 0;
+  display: none;            
+}
+/* Hide checkbox */
+input[type=checkbox] {
+  display: none;
+}
+
+/* Show menu when invisible checkbox is checked  */
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
+/* Responsive Styles */
+@media screen and (max-width : 760px){
+  /* Make dropdown links appear inline-size */
+  ul {
+      position: static;
+      display: none;
+  }
+  /* create vertical spacing */
+  li {
+      margin-bottom: 1px;
+  }
+  /* make all menu links full width */
+  ul li, li a {
+      width: 100%;
+  }
+  /* display 'show menu' link */
+  .show-menu {
+      display: block;
+  }
+}
+h2{
+  color: #000000;
+}
+
+h4 {
+  padding: 0px 30px 20px;
+  font-family: roboto;
+  font-size: 30px;
+  color: #111;
+  line-height: 24px;
+}
+
+h2 {
+  padding: 30px 30px 20px;
+  font-family: roboto;
+  font-size: 50px;
+  color: #111;
+  line-height: 44px;
+}

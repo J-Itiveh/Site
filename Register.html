@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking World</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+      <header>
+            <div class="brand">
+              <!-- <a href="index.html">Brand</a> -->
+              <img src="img/logo.png" width="200" alt="Hiking world logo">
+              </div>
+              <nav>
+              <label for="show-menu" class="show-menu">show menu</label>
+              <input type="checkbox" id="show-menu" role="button" aria-pressed="true">
+              <ul id="menu" class="mymenu">
+                <li><a href="Hikingworld.html">Home</a></li>
+                <li><a href="Equipment.html">Equipment/Tools</a></li>
+                <li><a href="Clothes.html">Clothes</a></li>
+                <li><a href="customercare.html">Customer care</a></li>
+                <li><a href="Register.html">Login/Register</a></li>
+              </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                <h2>LOGIN</h2>
+                <form>
+                    <input type="email" class="input-box" placeholder="Your Email ID" required>
+                    <input type="password" class="input-box" placeholder="password" required>
+                    <button type="submit" class="submit-btn">submit</button>
+                    <input type="checkbox"><span>Remeber Me</span>
+                </form>
+                    <button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                    <a href=""> Forgot Password</a>
+                </div>
+                <div class="card-back">
+                    <div class="card-front">
+                <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Your name" required>
+                        <input type="email" class="input-box" placeholder="Your Email ID" required>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <button type="submit" class="submit-btn">submit</button>
+                        <input type="checkbox"><span>Remeber Me</span>
+                    </form>
+                        <button type="button" class="btn" onclick="openLogin">I Have an account</button>
+                        <a href=""> Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col-1">
+          <h3>USEFUL LINKS</h3>
+          <a href="About.html">About</a>
+          <a href="customercare.html">Service</a>
+          <a href="customercare.html">contact</a>
+          <a href="Clothes.html">Clothes</a>
+          <a href="Findashop.html">Shops</a>
+       </div>
+        <div class="col-2">
+          <h3>NEWSLATER</h3>
+          <form>
+            <input type="email" placeholder="Your Email Address" required>
+            <br>
+            <button type="submit">SUBCRIBE NOW</button>
+          </form>
+        </div>
+        <div class="col-3">
+          <h3>CONTACT</h3>
+          <p> WF10 4TA, Xscape, Colorado Way,<br> Glasshoughton, Castleford.</p>
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+      </div>
+<script>
+    var card = document.getElementById("card");
+    function openRegister(){
+        card.style.transform = "rotateY(-180deg)";
+    }
+    function openLogin(){
+        card.style.transform = "rotateY(0deg)";
+    }
+
+</script>
+</body>
+</html>

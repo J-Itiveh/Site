@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bannerstyle.css">
+    <link rel="stylesheet" href="equipmentstyle.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/3b52d53377.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="brand">
+          <!-- <a href="index.html">Brand</a> -->
+          <img src="img/logo.png" width="200" alt="Hiking world logo">
+          </div>
+          <nav>
+          <label for="show-menu" class="show-menu">show menu</label>
+          <input type="checkbox" id="show-menu" role="button">
+          <ul id="menu" class="mymenu">
+            <li><a href="Hikingworld.html">Home</a></li>
+            <li><a href="Equipment.html">Equipment/Tools</a></li>
+            <li><a href="Clothes.html">Clothes</a></li>
+            <li><a href="customercare.html">Customer care</a></li>
+            <li><a href="Register.html">Login/Register</a></li>
+          </ul>
+        </nav>
+    </header>
+</body>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/hikingbanner.jpg" style="width:100%" alt="Hiking Banner">
+    <div class="text"><button class="mybutton">SHOP NOW</button></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/hikingbanner1.jpg" style="width:100%" alt="Hiking Banner">
+    <div class="text"><button class="mybutton">SHOP NOW</button></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/hikingbanner2.jpg" style="width:100%" alt="Hiking Banner">
+    <div class="text"><button class="mybutton">SHOP NOW</button></div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+ </div>
+<script>let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }</script>
+  <div>
+ <div class="small-container">
+  <div class="row row-2">
+      <h2>Product displays</h2>
+      
+  </div>
+            <div class="row">
+              <div class="col-4">
+               <a href="Equipment.html"><img src="img/hikingequipment.jpg" alt="hiking equipment"></a>
+               <h4>Hiking equipment</h4>
+               <p>Visit this page to find our products</p>
+              </div>
+               <div class="col-4">
+                   <a href="Clothes.html"><img src="img/womenswear.jpg" alt="women wear"></a>
+                   <h4>Women wear</h4>
+               <p>Visit this page to find our products</p>
+          </div>
+          
+            <div class="row">
+              <div class="col-4">
+               <a href="Clothes.html"><img src="img/childrenswear.jpg" alt="children wear"></a>
+               <h4>Children wear</h4>
+               <p>Visit this page to find our products</p>
+              </div>
+               <div class="col-4">
+                   <a href="Clothes.html"><img src="img/menswear.jpg" alt="men wear"></a>
+                   <h4>mens wear</h4>
+               <p>Visit this page to find our products</p>
+          </div>          
+</div>
+ </div>
+</div>
+<div class="footer">
+  <div class="col-1">
+    <h3>USEFUL LINKS</h3>
+    <a href="About.html">About</a>
+    <a href="customercare.html">Service</a>
+    <a href="customercare.html">contact</a>
+    <a href="Clothes.html">Clothes</a>
+    <a href="Findashop.html">Shops</a>
+ </div>
+  <div class="col-2">
+    <h3>NEWSLATER</h3>
+    <form>
+      <input type="email" placeholder="Your Email Address" required>
+      <br>
+      <button type="submit">SUBCRIBE NOW</button>
+    </form>
+  </div>
+  <div class="col-3">
+    <h3>CONTACT</h3>
+    <p> WF10 4TA, Xscape, Colorado Way,<br> Glasshoughton, Castleford.</p>
+    <div class="social-icon">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-x-twitter"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-tiktok"></i>
+    </div>
+  </div>
+</div>
+</body>
+</html>

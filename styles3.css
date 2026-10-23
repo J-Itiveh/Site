@@ -1,0 +1,212 @@
+
+body{  /*style1 */
+    background: #d4d650;
+  }
+  
+ * {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+  
+  
+  
+ }
+ .container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #d4d650;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+ }
+ header{
+   text-decoration: underline;
+ }
+  
+  
+  
+ .box{
+   background: rgb(172, 183, 189);
+   display: flex;
+   width: 700px;
+   height:auto;
+   margin-right: 50px;
+   flex-direction: column;
+   padding: 20px 20px;
+   border-radius: 20px;
+   box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+    0 32px 64px -48px rgba(0,0,0,0.5);
+ }
+ .box p{
+    font-weight: bolder;
+ }
+ .box-2{
+    background: rgb(172, 183, 189);
+    display: flex;
+    width: 700px;
+    color: rgb(0, 0, 0);
+    height:130px;
+    margin-right: 50px;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+     0 32px 64px -48px rgba(0,0,0,0.5);
+  }
+ .map-box{
+    background: rgb(172, 183, 189);
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    
+ }
+  
+ .form-box{
+   width: 450px;
+   margin: 0px 10px;
+ }
+  
+ .form-box header{
+   font-size: 25px;
+   font-weight: 600;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #e6e6e6;
+   margin-bottom: 10px;
+ }
+  
+ .form-box form .field{
+   display: flex;
+   margin: 10px;
+   flex-direction: column;
+ }
+ .form-box form .input input{
+   height: 40px;
+   width: 100%;
+   font-size: 16px;
+   padding: 0 10px;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   outline: none;
+ }
+ .btn{
+   height: 35px;
+   background: rgba(76, 68, 182,0.808);
+   border: 0;
+   border-radius: 5px;
+   color: white;
+   font-size: 15px;
+   cursor: pointer;
+   transition: all .3s;
+   margin-top: 10px;
+   padding: 0px 10px;
+ }
+  
+ .btn:hover{
+   opacity: 0.82;
+ }
+ .submit{
+   width: 100%;
+ }
+  
+ .link{
+   margin-bottom: 15px;
+ }
+  
+ .log{
+    padding: 25px;
+    cursor: pointer;
+ }
+   
+ /* Hamburger menu icon styles */
+ .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+ }
+  
+ .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(10, 10, 10);
+    margin: 2px 0;
+ }
+  
+ /* Navbar Media query for small screens */
+ @media (max-width: 720px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .nav-list li a{
+        color: white;
+    }
+    .nav-list li a:hover {
+        text-decoration: underline;
+        background-color: rgb(152, 149, 149);
+        /*box-shadow: 1px 3px 3px whitesmoke;*/
+    }
+  
+  
+    .nav-list.active {
+        display: flex;
+    }
+  
+    .menu-toggle {
+        display: flex;
+    }
+ }
+  
+ main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 60px;
+  
+ }
+  
+ .main-box{
+   display: flex;
+   flex-direction: column;
+   width: 70%;
+  
+ }
+ .main-box .top{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+  
+ .bottom{
+   width: 100%;
+   margin-top: 20px;
+  
+ }
+ @media only screen and (max-width: 900px){
+   .main-box .top{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+ }
+ .top .box{
+   margin: 10px 10px;
+  
+ }
+ .bottom{
+   margin-top: 0;
+ }
+ }
+  
+ has context menu
+ Compose
